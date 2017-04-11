@@ -10,8 +10,8 @@ var employees = [atticus, jem, boo, scout, robert, mayella];
 var bonusCal = function(emp){
   var bonusArr = [emp[0]];
   var bonus = 0;
-  if (emp[1].length === 4) {
-    bonus += 0.05;
+  if (emp[1].length === 4) {  //check employee # length (4 digits means long tenure)
+    bonus += 0.05;  //bonus to employees with long tenure at company
   }
 
   switch (emp[3]) {
